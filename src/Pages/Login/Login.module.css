@@ -1,0 +1,31 @@
+.image {
+  width: 100%;
+  height: 75vh;
+  background-color: #e2b887;
+  background-image: url(./bon-vivant-qom5MPOER-I-unsplash\ 5.png);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image,
+  .form {
+    width: 50%;
+    height: 100%;
+  }
+
+  .form {
+    padding: 4rem;
+  }
+}

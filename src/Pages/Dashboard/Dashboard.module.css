@@ -1,0 +1,22 @@
+.Dashboard {
+  width: 85%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 4rem 3rem;
+}
+
+.Dashboard h2,
+.Dashboard p {
+  color: #00302e;
+}
+
+.Dashboard p {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 1024px) {
+  .Dashboard {
+    padding: 4rem 5rem;
+  }
+}
