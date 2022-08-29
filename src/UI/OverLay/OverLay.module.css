@@ -1,0 +1,57 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.overlay {
+  background-color: white;
+  height: 100%;
+  width: 85%;
+}
+
+.cancel {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 23px;
+  z-index: 2000;
+}
+
+.cancel::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  border-radius: 0.5px;
+  background-color: white;
+  transform: translateY(0px) rotate(45deg);
+}
+
+.cancel::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transform: translateY(0px) rotate(-45deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .overlay {
+    width: 40%;
+  }
+}

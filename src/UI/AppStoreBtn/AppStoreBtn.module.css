@@ -1,0 +1,10 @@
+.app-store {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/Group.png);
+  margin-bottom: 15px;
+}

@@ -1,0 +1,12 @@
+.green_button {
+  width: 100%;
+  padding: 10px 0px;
+  color: #fbddbb;
+  background-color: #00302e;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.disabled {
+  opacity: 0.7;
+}
