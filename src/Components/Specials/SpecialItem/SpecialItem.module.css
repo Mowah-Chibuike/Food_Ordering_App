@@ -1,0 +1,44 @@
+.special-item {
+  width: 80%;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+.special-image {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.special-image img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.special-item h3 {
+  margin: 5px 0px 5px;
+  color: #fbddbb;
+}
+
+.special-item p {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  color: rgba(250, 250, 250, 0.83);
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 580px) {
+  .special-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .special-item {
+    width: 30%;
+  }
+}

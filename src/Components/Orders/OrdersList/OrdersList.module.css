@@ -1,0 +1,13 @@
+.orders_container {
+  width: 100%;
+  min-height: 40%;
+}
+
+.not_found {
+  width: 100%;
+  text-align: center;
+  margin-block: calc(10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

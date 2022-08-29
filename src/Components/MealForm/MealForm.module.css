@@ -1,0 +1,46 @@
+.meal_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.quantity_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.quantity_input button {
+  width: 25px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbddbb;
+  border: none;
+  color: #00302e;
+  font-weight: 600;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.quantity_input input {
+  width: 35px;
+  height: 35px;
+  padding: 15px 8px;
+  border: 1px solid #fbddbb;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.quantity_input input:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .quantity_input {
+    margin-right: 30px;
+  }
+}

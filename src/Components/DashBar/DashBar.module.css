@@ -1,0 +1,172 @@
+.navigation {
+  height: 100vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.logo {
+  height: 80px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.logo span {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span img {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.logo h2 {
+  display: none;
+}
+
+.navigation ul {
+  list-style: none;
+  width: 100%;
+}
+
+.navigation ul li {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 8px;
+}
+
+.active {
+  background-color: #efefef;
+}
+
+.navigation ul li div {
+  position: relative;
+  font-size: 0.75rem;
+  color: #bcbcbc;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation ul li.active div {
+  color: black;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon .img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.nav-link {
+  display: none;
+}
+
+.cart_content,
+.orders_content {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateY(30%);
+  z-index: 10;
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+  color: black;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orders_content {
+  background-color: #06e775;
+}
+
+.cart_content {
+  background-color: #f3c294;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    height: 80px;
+    width: 150px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  .logo span {
+    height: 80%;
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  .logo span img {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .logo h2 {
+    display: initial;
+    line-height: 50px;
+    color: black;
+  }
+  .navigation ul li {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 8px;
+  }
+  .navigation ul li div {
+    font-size: 0.75rem;
+    color: #bcbcbc;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  .nav-link {
+    display: initial;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .cart_content,
+  .orders_content {
+    position: initial;
+    top: 0;
+    left: 0;
+    transform: translateY(0%);
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}

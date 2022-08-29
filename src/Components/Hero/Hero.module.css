@@ -1,0 +1,117 @@
+.hero {
+  padding: 3rem 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 48, 46, 0.5);
+  background-image: url(../../assets/bon-vivant-qom5MPOER-I-unsplash\ 1.svg);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+.hero-text {
+  color: white;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  text-align: left;
+}
+.hero h1 {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+
+.hero .colored-span {
+  color: #fbddbb;
+}
+
+.hero p {
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-bottom: 15px;
+  color: rgba(250, 250, 250, 0.74);
+}
+
+.downloads {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.google-play {
+  background-image: url(../../assets/artwork.png);
+  margin-right: 8px;
+}
+
+.app-store {
+  background-image: url(../../assets/Group.png);
+}
+
+.hero-image {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 6rem;
+    padding-bottom: 0px;
+    height: 65vh;
+    background: none;
+  }
+  .hero-text {
+    color: white;
+    position: relative;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    display: block;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .image {
+    width: 80%;
+    height: 80%;
+  }
+
+  .image img {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
