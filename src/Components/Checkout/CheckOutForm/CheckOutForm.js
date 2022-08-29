@@ -1,11 +1,15 @@
 import React, { useContext } from "react";
 import CartContext from "../../../store/cart-context";
+import ModalContext from "../../../store/modal-context";
 import GreenButton from "../../../UI/GreenButton/GreenButton";
 import classes from "./CheckOutForm.module.css";
 
 const CheckOutForm = () => {
   const cartCtx = useContext(CartContext);
   const { orderItems } = cartCtx;
+
+  const modalCtx = useContext(ModalContext);
+  const { handleModalContent } = modalCtx;
   const handleFormSubmit = (event) => {
     event.preventDefault();
   };
@@ -29,6 +33,7 @@ const CheckOutForm = () => {
           item={{
             onClick: () => {
               orderItems();
+              handleModalContent("orders");
             },
           }}
         >
